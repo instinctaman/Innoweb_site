@@ -4489,7 +4489,7 @@ h1.elementor-heading-title span{
 	}
 
 	.agency-supports-slider .swiper-slide-inner img{
-		height: 25px;
+		/* height: 25px; */
 	}
 
 	.our-testimonial::before {
