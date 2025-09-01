@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star</title>
+    <style>
+        @font-face {
+            font-family: "MyIcons";
+            src: url("myicons.woff") format("woff");
+            /* normally you'd generate this */
+        }
+
+        .myicon {
+            font-family: "MyIcons";
+            font-style: normal;
+            font-weight: normal;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 32px;
+            /* scalable */
+            line-height: 1;
+        }
+
+        /* Assign our custom star icon */
+        .my-star::before {
+            content: "\2605";
+            /* Unicode for ★, but here it simulates our custom icon */
+        }
+    </style>
+</head>
+
+<body>
+    <i class="myicon my-star"></i>
+    <i class="myicon my-star" style="color: gold; font-size: 48px;"></i>
+    <i class="myicon my-star" style="color: red;"></i>
+</body>
+
+</html>
