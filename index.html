@@ -33,10 +33,61 @@
 	<link rel="icon" href="jorney_logo_inno_icon.webp" sizes="192x192" />
 	<link rel="apple-touch-icon" href="jorney_logo_inno_icon.webp" />
 	<meta name="msapplication-TileImage" content="jorney_logo_inno_icon.webp" />
+	<style>
+		#preloader {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: #ffffff;
+			/* background color */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			z-index: 9999;
+			transition: opacity 0.6s ease, visibility 0.6s ease;
+		}
+
+		/* Hide preloader when finished */
+		#preloader.hidden {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		/* Loader image */
+		#preloader img {
+			width: 120px;
+			height: auto;
+			animation: bounce 1.5s infinite;
+		}
+
+		/* Simple animation */
+		@keyframes bounce {
+
+			0%,
+			100% {
+				transform: translateY(0);
+			}
+
+			50% {
+				transform: translateY(-15px);
+			}
+		}
+	</style>
 </head>
 
 <body
 	class="wp-singular page-template page-template-elementor_header_footer page page-id-10764 wp-custom-logo wp-theme-artistics tt-magic-cursor demo-1 elementor-default elementor-template-full-width elementor-kit-8 elementor-page elementor-page-10764">
+	<div id="preloader">
+		<img src="assets/images/inno_logo.png" alt="Loading..." style="width: 300px;">
+	</div>
+	<script>
+		window.addEventListener("load", function () {
+			// Add "hidden" class to fade out preloader
+			document.getElementById("preloader").classList.add("hidden");
+		});
+	</script>
 	<!-- <div class="preloader">
 		<div class="loading-container">
 			<div class="loading"></div>
@@ -174,15 +225,18 @@
 															Mobile Applications </a>
 													<li id="menu-item-10125"
 														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10125 nav-item elementskit-mobile-builder-content"
-														data-vertical-menu=750px><a href="graphic_design.html" class=" dropdown-item">
+														data-vertical-menu=750px><a href="graphic_design.html"
+															class=" dropdown-item">
 															Graphic Design </a>
 													<li id="menu-item-10126"
 														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10126 nav-item elementskit-mobile-builder-content"
-														data-vertical-menu=750px><a href="ecommerce_solutions.html" class=" dropdown-item">
+														data-vertical-menu=750px><a href="ecommerce_solutions.html"
+															class=" dropdown-item">
 															Ecommerce Solutions </a>
 													<li id="menu-item-10127"
 														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10127 nav-item elementskit-mobile-builder-content"
-														data-vertical-menu=750px><a href="training_certification.html" class=" dropdown-item">
+														data-vertical-menu=750px><a href="training_certification.html"
+															class=" dropdown-item">
 															Training & Certification </a>
 												</ul>
 											</li>
@@ -194,35 +248,43 @@
 												<ul class="elementskit-dropdown elementskit-submenu-panel">
 													<li id="menu-item-7232"
 														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7232 nav-item elementskit-mobile-builder-content"
-														data-vertical-menu=750px><a href="generative_ai.html" class=" dropdown-item">
+														data-vertical-menu=750px><a href="generative_ai.html"
+															class=" dropdown-item">
 															Generative AI</a>
 													<li id="menu-item-8525"
 														class="menu-item menu-item-type-post_type_archive menu-item-object-awaiken-project menu-item-8525 nav-item elementskit-mobile-builder-content"
-														data-vertical-menu=750px><a href="transformation.html" class=" dropdown-item">
+														data-vertical-menu=750px><a href="transformation.html"
+															class=" dropdown-item">
 															Experience Transformation </a>
 													<li id="menu-item-5065"
 														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5065 nav-item elementskit-dropdown-has relative_position elementskit-dropdown-menu-default_width elementskit-mobile-builder-content"
-														data-vertical-menu=750px><a href="customer_engagement.html" class=" dropdown-item">
+														data-vertical-menu=750px><a href="customer_engagement.html"
+															class=" dropdown-item">
 															Customer Engagement </a>
 													<li id="menu-item-8107"
 														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8107 nav-item elementskit-mobile-builder-content"
-														data-vertical-menu=750px><a href="digital_commerce.html" class=" dropdown-item">
+														data-vertical-menu=750px><a href="digital_commerce.html"
+															class=" dropdown-item">
 															Digital Commerce </a>
 													<li id="menu-item-8109"
 														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8109 nav-item elementskit-mobile-builder-content"
-														data-vertical-menu=750px><a href="digital_engineering.html" class=" dropdown-item">
+														data-vertical-menu=750px><a href="digital_engineering.html"
+															class=" dropdown-item">
 															Digital Engineering </a>
 													<li id="menu-item-8108"
 														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8108 nav-item elementskit-mobile-builder-content"
-														data-vertical-menu=750px><a href="infrastructure.html" class=" dropdown-item">
+														data-vertical-menu=750px><a href="infrastructure.html"
+															class=" dropdown-item">
 															Modernizing Tech Infrastructure </a>
 													<li id="menu-item-8112"
 														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8112 nav-item elementskit-mobile-builder-content"
-														data-vertical-menu=750px><a href="management_services.html" class=" dropdown-item">
+														data-vertical-menu=750px><a href="management_services.html"
+															class=" dropdown-item">
 															Management Services </a>
 													<li id="menu-item-8111"
 														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8111 nav-item elementskit-mobile-builder-content"
-														data-vertical-menu=750px><a href="innovation.html" class=" dropdown-item">
+														data-vertical-menu=750px><a href="innovation.html"
+															class=" dropdown-item">
 															Innovation </a>
 
 
@@ -230,7 +292,8 @@
 											</li>
 											<li id="menu-item-5057"
 												class="mobile-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-5057 nav-item elementskit-mobile-builder-content"
-												data-vertical-menu=750px><a href="https://innowebsolution.com/blog/" class="ekit-menu-nav-link">Blog</a>
+												data-vertical-menu=750px><a href="https://innowebsolution.com/blog/"
+													class="ekit-menu-nav-link">Blog</a>
 											</li>
 											<li id="menu-item-5058"
 												class="mobile-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-5058 nav-item elementskit-mobile-builder-content"
@@ -238,7 +301,8 @@
 													class="ekit-menu-nav-link">Clients</a></li>
 											<li id="menu-item-5059"
 												class="mobile-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-5059 nav-item elementskit-mobile-builder-content"
-												data-vertical-menu=750px><a href="contact.html" class="ekit-menu-nav-link">Contact
+												data-vertical-menu=750px><a href="contact.html"
+													class="ekit-menu-nav-link">Contact
 													us</a></li>
 										</ul>
 										<div class="elementskit-nav-identity-panel"><button
@@ -842,7 +906,8 @@
 							data-widget_type="button.default">
 							<div class="elementor-widget-container">
 								<div class="elementor-button-wrapper">
-									<a class="elementor-button elementor-button-link elementor-size-sm" href="contact.html">
+									<a class="elementor-button elementor-button-link elementor-size-sm"
+										href="contact.html">
 										<span class="elementor-button-content-wrapper">
 											<span class="elementor-button-icon">
 												<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
@@ -1505,7 +1570,8 @@
 							data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}"
 							data-widget_type="text-editor.default">
 							<div class="elementor-widget-container">
-								<p>Let&#8217;s make something great work together. <a href="contact.html">Get Free Quote</a>
+								<p>Let&#8217;s make something great work together. <a href="contact.html">Get Free
+										Quote</a>
 								</p>
 							</div>
 						</div>
@@ -1724,7 +1790,8 @@
 													today, This is how you can seize the opportunity to transform
 													experience and operations.</p>
 												<div class="btn-wraper">
-													<a href="generative_ai.html" class="elementskit-btn  whitespace--normal">
+													<a href="generative_ai.html"
+														class="elementskit-btn  whitespace--normal">
 														Read More <svg xmlns="http://www.w3.org/2000/svg" width="35"
 															height="35" viewBox="0 0 35 35" fill="currentColor">
 															<path
@@ -1762,7 +1829,8 @@
 													Capabilities, Processes and Technologies to Transform Value Creation
 													Around Customer Outcomes.</p>
 												<div class="btn-wraper">
-													<a href="transformation.html" class="elementskit-btn  whitespace--normal">
+													<a href="transformation.html"
+														class="elementskit-btn  whitespace--normal">
 														Read More <svg xmlns="http://www.w3.org/2000/svg" width="35"
 															height="35" viewBox="0 0 35 35" fill="currentColor">
 															<path
@@ -1800,7 +1868,8 @@
 													360-Degree Customer Insights, Strengthen Bonds and Deliver Engaging
 													Journeys.</p>
 												<div class="btn-wraper">
-													<a href="customer_engagement.html" class="elementskit-btn  whitespace--normal">
+													<a href="customer_engagement.html"
+														class="elementskit-btn  whitespace--normal">
 														Read More <svg xmlns="http://www.w3.org/2000/svg" width="35"
 															height="35" viewBox="0 0 35 35" fill="currentColor">
 															<path
@@ -1836,7 +1905,8 @@
 												<p>We Optimize Profitability, Personalize Experiences and Reduce Costs
 													with our End-to-End E-commerce Solutions and Strategic Partnerships.
 												<div class="btn-wraper">
-													<a href="digital_commerce.html" class="elementskit-btn  whitespace--normal">
+													<a href="digital_commerce.html"
+														class="elementskit-btn  whitespace--normal">
 														Read More <svg xmlns="http://www.w3.org/2000/svg" width="35"
 															height="35" viewBox="0 0 35 35" fill="currentColor">
 															<path
@@ -1872,7 +1942,8 @@
 												<p>We Accelerate from Ideas to Production and Concept to Customer by
 													Embracing Continuous Release, Testing, Learning and Improvement.</p>
 												<div class="btn-wraper">
-													<a href="digital_engineering.html" class="elementskit-btn  whitespace--normal">
+													<a href="digital_engineering.html"
+														class="elementskit-btn  whitespace--normal">
 														Read More <svg xmlns="http://www.w3.org/2000/svg" width="35"
 															height="35" viewBox="0 0 35 35" fill="currentColor">
 															<path
@@ -1912,7 +1983,8 @@
 
 												</p>
 												<div class="btn-wraper">
-													<a href="innovation.html" class="elementskit-btn  whitespace--normal">
+													<a href="innovation.html"
+														class="elementskit-btn  whitespace--normal">
 														Read More <svg xmlns="http://www.w3.org/2000/svg" width="35"
 															height="35" viewBox="0 0 35 35" fill="currentColor">
 															<path
@@ -1950,7 +2022,8 @@
 													between application development and service management teams for
 													sustainable systems and investments.</p>
 												<div class="btn-wraper">
-													<a href="management_services.html" class="elementskit-btn  whitespace--normal">
+													<a href="management_services.html"
+														class="elementskit-btn  whitespace--normal">
 														Read More <svg xmlns="http://www.w3.org/2000/svg" width="35"
 															height="35" viewBox="0 0 35 35" fill="currentColor">
 															<path
@@ -1988,7 +2061,8 @@
 													solutions aligned with your unique business goals, Enabling
 													real-time adaptation through platform thinking.</p>
 												<div class="btn-wraper">
-													<a href="infrastructure.html" class="elementskit-btn  whitespace--normal">
+													<a href="infrastructure.html"
+														class="elementskit-btn  whitespace--normal">
 														Read More <svg xmlns="http://www.w3.org/2000/svg" width="35"
 															height="35" viewBox="0 0 35 35" fill="currentColor">
 															<path
@@ -2209,7 +2283,8 @@
 							data-widget_type="button.default">
 							<div class="elementor-widget-container">
 								<div class="elementor-button-wrapper">
-									<a class="elementor-button elementor-button-link elementor-size-sm" href="contact.html">
+									<a class="elementor-button elementor-button-link elementor-size-sm"
+										href="contact.html">
 										<span class="elementor-button-content-wrapper">
 											<span class="elementor-button-icon">
 												<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
@@ -3070,7 +3145,8 @@
 							data-widget_type="button.default">
 							<div class="elementor-widget-container">
 								<div class="elementor-button-wrapper">
-									<a class="elementor-button elementor-button-link elementor-size-sm" href="contact.html">
+									<a class="elementor-button elementor-button-link elementor-size-sm"
+										href="contact.html">
 										<span class="elementor-button-content-wrapper">
 											<span class="elementor-button-icon">
 												<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
@@ -3288,10 +3364,9 @@
 													<p role="status" aria-live="polite" aria-atomic="true"></p>
 													<ul></ul>
 												</div>
-												<form
-													action="#"
-													method="post" class="wpcf7-form init" aria-label="Contact form"
-													novalidate="novalidate" data-status="init">
+												<form action="#" method="post" class="wpcf7-form init"
+													aria-label="Contact form" novalidate="novalidate"
+													data-status="init">
 													<fieldset class="hidden-fields-container"><input type="hidden"
 															name="_wpcf7" value="5367" /><input type="hidden"
 															name="_wpcf7_version" value="6.1" /><input type="hidden"
@@ -3333,7 +3408,8 @@
 									<div class="ekit-wid-con">
 										<ul class="ekit_social_media">
 											<li class="elementor-repeater-item-c477a9e">
-												<a href="https://www.linkedin.com/company/innoweb-solution/" aria-label="Pinterest" class="p">
+												<a href="https://www.linkedin.com/company/innoweb-solution/"
+													aria-label="Pinterest" class="p">
 
 													<i aria-hidden="true" class="fab fa-linkedin"></i>
 												</a>
@@ -3344,13 +3420,15 @@
 												</a>
 											</li>
 											<li class="elementor-repeater-item-c7d4689">
-												<a href="https://www.facebook.com/Innowebsolution/" aria-label="Facebook" class="f">
+												<a href="https://www.facebook.com/Innowebsolution/"
+													aria-label="Facebook" class="f">
 
 													<i aria-hidden="true" class="fab fa-facebook-f"></i>
 												</a>
 											</li>
 											<li class="elementor-repeater-item-4fcfb8e">
-												<a href="https://www.instagram.com/innowebsolution.ltd/#" aria-label="Instagram" class="instagram">
+												<a href="https://www.instagram.com/innowebsolution.ltd/#"
+													aria-label="Instagram" class="instagram">
 
 													<i aria-hidden="true" class="fab fa-instagram"></i>
 												</a>
