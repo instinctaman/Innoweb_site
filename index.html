@@ -41,38 +41,36 @@
 			width: 100%;
 			height: 100%;
 			background: #ffffff;
-			/* background color */
 			display: flex;
+			flex-direction: column;
 			align-items: center;
 			justify-content: center;
 			z-index: 9999;
 			transition: opacity 0.6s ease, visibility 0.6s ease;
 		}
 
-		/* Hide preloader when finished */
+		/* Hide preloader after load */
 		#preloader.hidden {
 			opacity: 0;
 			visibility: hidden;
 		}
 
-		/* Loader image */
+		/* Logo */
 		#preloader img {
 			width: 120px;
 			height: auto;
-			animation: bounce 1.5s infinite;
+			margin-bottom: 20px;
 		}
 
-		/* Simple animation */
-		@keyframes bounce {
-
-			0%,
-			100% {
-				transform: translateY(0);
-			}
-
-			50% {
-				transform: translateY(-15px);
-			}
+		/* Typing text */
+		.typing {
+			font-size: 20px;
+			font-weight: bold;
+			color: #333;
+			border-right: 3px solid #333;
+			white-space: nowrap;
+			overflow: hidden;
+			display: inline-block;
 		}
 	</style>
 </head>
@@ -80,13 +78,32 @@
 <body
 	class="wp-singular page-template page-template-elementor_header_footer page page-id-10764 wp-custom-logo wp-theme-artistics tt-magic-cursor demo-1 elementor-default elementor-template-full-width elementor-kit-8 elementor-page elementor-page-10764">
 	<div id="preloader">
-		<img src="assets/images/inno_logo.png" alt="Loading..." style="width: 300px;">
+		<img src="assets/images/inno_logo.png" alt="Logo" style="width: 300px;">
+		<div class="typing" id="typing-text"></div>
 	</div>
 	<script>
+		const text = "Preparing for your Success, We Provide Best IT Solutions!";
+		let i = 0;
+		const speed = 40; // typing speed in ms
+
+		function typeWriter() {
+			if (i < text.length) {
+				document.getElementById("typing-text").innerHTML += text.charAt(i);
+				i++;
+				setTimeout(typeWriter, speed);
+			}
+		}
+
 		window.addEventListener("load", function () {
-			// Add "hidden" class to fade out preloader
-			document.getElementById("preloader").classList.add("hidden");
+			// Start typing
+			typeWriter();
+
+			// Fade out preloader after page load + typing delay
+			setTimeout(() => {
+				document.getElementById("preloader").classList.add("hidden");
+			}, text.length * speed + 1000); // wait for typing + 1s
 		});
+	</script>
 	</script>
 	<!-- <div class="preloader">
 		<div class="loading-container">
