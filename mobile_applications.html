@@ -26,18 +26,57 @@
     <link rel="icon" href="jorney_logo_inno_icon.webp" sizes="192x192" />
     <link rel="apple-touch-icon" href="jorney_logo_inno_icon.webp" />
     <meta name="msapplication-TileImage" content="jorney_logo_inno_icon.webp" />
+<style>
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.6s ease, visibility 0.6s ease;
+        }
+
+        #preloader.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        #preloader img {
+            width: 120px;
+            height: auto;
+            animation: bounce 1.5s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+    </style>
 </head>
 
 <body
-    class="wp-singular page-template page-template-elementor_header_footer page page-id-10103 page-child parent-pageid-78 wp-custom-logo wp-theme-artistics tt-magic-cursor demo-1 elementor-default elementor-template-full-width elementor-kit-8 elementor-page elementor-page-10103">
-    <!-- <div class="preloader">
-        <div class="loading-container">
-            <div class="loading"></div>
-            <div id="loading-icon"><img
-                    src="https://demo.awaikenthemes.com/artistics/wp-content/themes/artistics/assets/images/loader.svg"
-                    alt=""></div>
-        </div>
-    </div> -->
+    class="wp-singular page-template page-template-elementor_header_footer page page-id-16 wp-custom-logo wp-theme-artistics tt-magic-cursor demo-1 elementor-default elementor-template-full-width elementor-kit-8 elementor-page elementor-page-16">
+    <div id="preloader">
+        <img src="assets/images/inno_logo.png" alt="Loading..." style="width: 300px;">
+    </div>
+    <script>
+        window.addEventListener("load", function () {
+            // Add "hidden" class to fade out preloader
+            document.getElementById("preloader").classList.add("hidden");
+        });
+    </script>
     <div id="magic-cursor">
         <div id="ball"></div>
     </div>
@@ -605,7 +644,7 @@
     <div data-elementor-type="wp-page" data-elementor-id="10103" class="elementor elementor-10103">
         <div class="elementor-element elementor-element-9918e5e e-flex e-con-boxed e-con e-parent" data-id="9918e5e"
             data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-            <div class="e-con-inner">
+            <div class="e-con-inner" style="margin-top: 100px;">
                 <div class="elementor-element elementor-element-2b16294 e-con-full e-flex e-con e-child"
                     data-id="2b16294" data-element_type="container">
                     <div class="elementor-element elementor-element-9de6665 at-heading-animation at-animation-heading-style-2 elementor-widget elementor-widget-heading"
