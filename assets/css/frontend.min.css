@@ -1983,6 +1983,7 @@ body.rtl .e-con {
 
 .e-con>.elementor-background-slideshow,
 :is(.e-con, .e-con>.e-con-inner)>.elementor-background-video-container {
+    margin-top: 100px;
     border-block-end-width: var(--border-block-end-width);
     border-block-start-width: var(--border-block-start-width);
     border-color: var(--border-color);

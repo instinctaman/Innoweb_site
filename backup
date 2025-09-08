@@ -1,0 +1,15 @@
+.section-title .elementor-heading-title::before{
+	content: "\2a";
+	position: absolute;
+	 font-family: "Font Awesome 6 Free";
+	 font-size: 38px;
+	top: 80%;
+	left: 0;
+	bottom: 0;
+	transform: translateY(-50%);
+	color: var(--e-global-color-accent);
+	/* mask-image: url("assets/images/icon-sub-heading.svg"); */
+	mask-size: cover;
+	width: 16px;
+	height: 16px;
+}
