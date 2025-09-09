@@ -324,6 +324,7 @@
 }
 
 .elementor-5067 .elementor-element.elementor-element-34a5ede .ekit-wid-con .ekit-sidebar-widget {
+    height: 100vh;
     background-color: var(--e-global-color-secondary);
     max-width: 375px;
 }
