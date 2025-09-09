@@ -56,24 +56,7 @@
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-505 nav-item elementskit-mobile-builder-content"
 												data-vertical-menu=750px><a href="index.html"
 													class="ekit-menu-nav-link ekit-menu-dropdown-toggle">Home</a>
-												<!-- <ul class="elementskit-dropdown elementskit-submenu-panel">
-													<li id="menu-item-10806"
-														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10806 nav-item elementskit-mobile-builder-content"
-														data-vertical-menu=750px><a
-															href="https://demo.awaikenthemes.com/artistics/home-image/"
-															class=" dropdown-item">Home – Image</a>
-													<li id="menu-item-10807"
-														class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-10764 current_page_item menu-item-10807 nav-item elementskit-mobile-builder-content active"
-														data-vertical-menu=750px><a
-															href="https://demo.awaikenthemes.com/artistics/home-slider/"
-															class=" dropdown-item active">Home – Slider</a>
-												</ul> -->
 											</li>
-											<!-- <li id="menu-item-5056"
-												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5056 nav-item elementskit-mobile-builder-content"
-												data-vertical-menu=750px><a
-													href="https://demo.awaikenthemes.com/artistics/about-us/"
-													class="ekit-menu-nav-link">About Us</a></li> -->
 											<li id="menu-item-5057"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5058 nav-item elementskit-dropdown-has relative_position elementskit-dropdown-menu-default_width elementskit-mobile-builder-content"
 												data-vertical-menu=750px><a href="#"
@@ -124,15 +107,18 @@
 															Mobile Applications </a>
 													<li id="menu-item-10125"
 														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10125 nav-item elementskit-mobile-builder-content"
-														data-vertical-menu=750px><a href="graphic_design.html" class=" dropdown-item">
+														data-vertical-menu=750px><a href="graphic_design.html"
+															class=" dropdown-item">
 															Graphic Design </a>
 													<li id="menu-item-10126"
 														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10126 nav-item elementskit-mobile-builder-content"
-														data-vertical-menu=750px><a href="ecommerce_solutions.html" class=" dropdown-item">
+														data-vertical-menu=750px><a href="ecommerce_solutions.html"
+															class=" dropdown-item">
 															Ecommerce Solutions </a>
 													<li id="menu-item-10127"
 														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10127 nav-item elementskit-mobile-builder-content"
-														data-vertical-menu=750px><a href="training_certification.html" class=" dropdown-item">
+														data-vertical-menu=750px><a href="training_certification.html"
+															class=" dropdown-item">
 															Training & Certification </a>
 												</ul>
 											</li>
@@ -144,35 +130,43 @@
 												<ul class="elementskit-dropdown elementskit-submenu-panel">
 													<li id="menu-item-7232"
 														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7232 nav-item elementskit-mobile-builder-content"
-														data-vertical-menu=750px><a href="generative_ai.html" class=" dropdown-item">
+														data-vertical-menu=750px><a href="generative_ai.html"
+															class=" dropdown-item">
 															Generative AI</a>
 													<li id="menu-item-8525"
 														class="menu-item menu-item-type-post_type_archive menu-item-object-awaiken-project menu-item-8525 nav-item elementskit-mobile-builder-content"
-														data-vertical-menu=750px><a href="transformation.html" class=" dropdown-item">
+														data-vertical-menu=750px><a href="transformation.html"
+															class=" dropdown-item">
 															Experience Transformation </a>
 													<li id="menu-item-5065"
 														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5065 nav-item elementskit-dropdown-has relative_position elementskit-dropdown-menu-default_width elementskit-mobile-builder-content"
-														data-vertical-menu=750px><a href="customer_engagement.html" class=" dropdown-item">
+														data-vertical-menu=750px><a href="customer_engagement.html"
+															class=" dropdown-item">
 															Customer Engagement </a>
 													<li id="menu-item-8107"
 														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8107 nav-item elementskit-mobile-builder-content"
-														data-vertical-menu=750px><a href="digital_commerce.html" class=" dropdown-item">
+														data-vertical-menu=750px><a href="digital_commerce.html"
+															class=" dropdown-item">
 															Digital Commerce </a>
 													<li id="menu-item-8109"
 														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8109 nav-item elementskit-mobile-builder-content"
-														data-vertical-menu=750px><a href="digital_engineering.html" class=" dropdown-item">
+														data-vertical-menu=750px><a href="digital_engineering.html"
+															class=" dropdown-item">
 															Digital Engineering </a>
 													<li id="menu-item-8108"
 														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8108 nav-item elementskit-mobile-builder-content"
-														data-vertical-menu=750px><a href="infrastructure.html" class=" dropdown-item">
+														data-vertical-menu=750px><a href="infrastructure.html"
+															class=" dropdown-item">
 															Modernizing Tech Infrastructure </a>
 													<li id="menu-item-8112"
 														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8112 nav-item elementskit-mobile-builder-content"
-														data-vertical-menu=750px><a href="management_services.html" class=" dropdown-item">
+														data-vertical-menu=750px><a href="management_services.html"
+															class=" dropdown-item">
 															Management Services </a>
 													<li id="menu-item-8111"
 														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8111 nav-item elementskit-mobile-builder-content"
-														data-vertical-menu=750px><a href="innovation.html" class=" dropdown-item">
+														data-vertical-menu=750px><a href="innovation.html"
+															class=" dropdown-item">
 															Innovation </a>
 
 
@@ -180,7 +174,8 @@
 											</li>
 											<li id="menu-item-5057"
 												class="mobile-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-5057 nav-item elementskit-mobile-builder-content"
-												data-vertical-menu=750px><a href="https://innowebsolution.com/blog/" class="ekit-menu-nav-link">Blog</a>
+												data-vertical-menu=750px><a href="https://innowebsolution.com/blog/"
+													class="ekit-menu-nav-link">Blog</a>
 											</li>
 											<li id="menu-item-5058"
 												class="mobile-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-5058 nav-item elementskit-mobile-builder-content"
@@ -188,7 +183,8 @@
 													class="ekit-menu-nav-link">Clients</a></li>
 											<li id="menu-item-5059"
 												class="mobile-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-5059 nav-item elementskit-mobile-builder-content"
-												data-vertical-menu=750px><a href="contact.html" class="ekit-menu-nav-link">Contact
+												data-vertical-menu=750px><a href="contact.html"
+													class="ekit-menu-nav-link">Contact
 													us</a></li>
 										</ul>
 										<div class="elementskit-nav-identity-panel"><button
