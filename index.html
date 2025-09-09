@@ -3400,32 +3400,9 @@
 			</div>
 		</div>
 	</div>
-	<script>
-		const lazyloadRunObserver = () => {
-			const lazyloadBackgrounds = document.querySelectorAll(`.e-con.e-parent:not(.e-lazyloaded)`);
-			const lazyloadBackgroundObserver = new IntersectionObserver((entries) => {
-				entries.forEach((entry) => {
-					if (entry.isIntersecting) {
-						let lazyloadBackground = entry.target;
-						if (lazyloadBackground) {
-							lazyloadBackground.classList.add('e-lazyloaded');
-						}
-						lazyloadBackgroundObserver.unobserve(entry.target);
-					}
-				});
-			}, { rootMargin: '200px 0px 200px 0px' });
-			lazyloadBackgrounds.forEach((lazyloadBackground) => {
-				lazyloadBackgroundObserver.observe(lazyloadBackground);
-			});
-		};
-		const events = [
-			'DOMContentLoaded',
-			'elementor/lazyload/observe',
-		];
-		events.forEach((event) => {
-			document.addEventListener(event, lazyloadRunObserver);
-		});
-	</script>
+	<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/artistics\/*"},{"not":{"href_matches":["\/artistics\/wp-*.php","\/artistics\/wp-admin\/*","\/artistics\/wp-content\/uploads\/*","\/artistics\/wp-content\/*","\/artistics\/wp-content\/plugins\/*","\/artistics\/wp-content\/themes\/artistics\/*","\/artistics\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
 	<link rel="stylesheet" href="assets/css/post-5067.css">
 	<link rel='stylesheet' id='elementor-post-5209-css'
 		href='https://demo.awaikenthemes.com/artistics/wp-content/uploads/elementor/css/post-5209.css?ver=1752607718'
