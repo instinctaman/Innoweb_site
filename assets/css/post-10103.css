@@ -22,8 +22,17 @@
 
 .elementor-10103 .elementor-element.elementor-element-9918e5e:not(.elementor-motion-effects-element-type-background),
 .elementor-10103 .elementor-element.elementor-element-9918e5e>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+    /* background-image: url("https://demo.awaikenthemes.com/artistics/wp-content/uploads/2024/11/page-header-bg.jpg"); */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.elementor-10103 .elementor-element.elementor-element-9918e5e:not(.elementor-motion-effects-element-type-background),
+.elementor-10103 .elementor-element.elementor-element-9918e5e>.elementor-motion-effects-container>.elementor-motion-effects-layer::before {
+    content: "";
     background-image: url("https://demo.awaikenthemes.com/artistics/wp-content/uploads/2024/11/page-header-bg.jpg");
     background-position: center center;
+    overlay: 2;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -118,7 +127,7 @@
 
 .elementor-10103 .elementor-element.elementor-element-2dd28a5:not(.elementor-motion-effects-element-type-background),
 .elementor-10103 .elementor-element.elementor-element-2dd28a5>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-color: var(--e-global-color-accent);
+    background-color: var(--e-global-color-divider);
 }
 
 .elementor-10103 .elementor-element.elementor-element-cfc43c0 .ekit-content-ticker-wrapper .ekit-content-items {
@@ -942,7 +951,7 @@ body:not(.rtl) .elementor-10103 .elementor-element.elementor-element-398bcc1 .el
 .elementor-10103 .elementor-element.elementor-element-2e92f3e .elementskit-accordion .elementskit-card-header>.elementskit-btn-link[aria-expanded=true],
 .elementor-10103 .elementor-element.elementor-element-2e92f3e .elementskit-accordion.floating-style .elementskit-card .elementskit-btn-link[aria-expanded="true"] {
     background-color: transparent;
-    background-image: linear-gradient(90deg, var(--e-global-color-divider) 50%, #F2295B00 100%);
+    background-image: linear-gradient(90deg, --e-global-color-black 50%, #F2295B00 100%);
 }
 
 .elementor-10103 .elementor-element.elementor-element-2e92f3e .elementskit-accordion .elementskit-card-header>.elementskit-btn-link {
@@ -959,7 +968,7 @@ body:not(.rtl) .elementor-10103 .elementor-element.elementor-element-398bcc1 .el
 .elementor-10103 .elementor-element.elementor-element-2e92f3e .elementskit-accordion .elementskit-card-body,
 .elementor-10103 .elementor-element.elementor-element-2e92f3e .accordion.floating-style .elementskit-card-body {
     background-color: transparent;
-    background-image: linear-gradient(90deg, var(--e-global-color-divider) 50%, #F2295B00 100%);
+    background-image: linear-gradient(90deg, --e-global-color-black 50%, #F2295B00 100%);
 }
 
 .elementor-10103 .elementor-element.elementor-element-2e92f3e>.elementor-widget-container {

@@ -119,7 +119,7 @@
 
 .elementor-5001 .elementor-element.elementor-element-11a1206:not(.elementor-motion-effects-element-type-background),
 .elementor-5001 .elementor-element.elementor-element-11a1206>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-color: var(--e-global-color-accent);
+    background-color: var(--e-global-color-divider);
 }
 
 .elementor-5001 .elementor-element.elementor-element-dc8d830 .ekit-content-ticker-wrapper .ekit-content-items {

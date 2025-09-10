@@ -3299,13 +3299,7 @@ body.rtl .elementor-10764 .elementor-element.elementor-element-6537b47 {
 }
 
 .elementor-10764 .elementor-element.elementor-element-58e916e .elementor-counter-number-wrapper {
-	text-align: {
-			{
-			VALUE
-		}
-	}
-
-	;
+	/* Fixed invalid text-align property */
 	--counter-prefix-grow:1;
 	--counter-suffix-grow:1;
 	--counter-number-grow:0;
