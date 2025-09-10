@@ -2,12 +2,12 @@
     --e-global-color-primary: #FFFFFF;
     --e-global-color-secondary: #1B1B1B;
     --e-global-color-text: #F5F5F4;
-    --e-global-color-accent: #389BAC;
+    --e-global-color-accent: rgb(38, 141, 148);
     --e-global-color-accentsecondary: #00000000;
     --e-global-color-white: #FFFFFF;
     --e-global-color-black: #000000;
-    --e-global-color-divider: #FFFFFF1A;
-    --e-global-color-darkdivider: #F7FBFA1A;
+    --e-global-color-divider: rgb(188, 227, 38);
+    --e-global-color-darkdivider: rgb(188, 227, 38);
     --e-global-typography-primary-font-family: "Plus Jakarta Sans";
     --e-global-typography-primary-font-size: 50px;
     --e-global-typography-primary-font-weight: 300;
