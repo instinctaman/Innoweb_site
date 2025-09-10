@@ -3619,11 +3619,11 @@ body.admin-bar .main-header.ekit-sticky--effects{
 /*  Heading Small Icon & Hide Small Icon  */
 
 .section-title .elementor-heading-title{
-	padding-left: 24px;
+	/* padding-left: 24px; */
 }
 
 .section-title .elementor-heading-title::before{
-	content: '';
+	/* content: ''; */
 	position: absolute;
 	top: 50%;
 	left: 0;
