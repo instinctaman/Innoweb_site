@@ -584,8 +584,8 @@
 	--container-widget-flex-grow: 0;
 	--container-widget-align-self: initial;
 	--flex-wrap-mobile: wrap;
-	--padding-top: 80px;
-	--padding-bottom: 80px;
+	--padding-top: 40px;
+	--padding-bottom: 40px;
 	--padding-left: 10px;
 	--padding-right: 10px;
 	overflow: visible;
@@ -4624,8 +4624,8 @@ body.rtl .elementor-10764 .elementor-element.elementor-element-6537b47 {
 	--container-widget-flex-grow: 0;
 	--container-widget-align-self: initial;
 	--flex-wrap-mobile: wrap;
-	--padding-top: 80px;
-	--padding-bottom: 80px;
+	--padding-top: 40px;
+	--padding-bottom: 40px;
 	--padding-left: 10px;
 	--padding-right: 10px;
 	overflow: visible;
