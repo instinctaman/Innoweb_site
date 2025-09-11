@@ -22,7 +22,7 @@
 	--display: flex;
 	--gap: 60px 60px;
 	--row-gap: 60px;
-	--column-gap: 60px;
+	--column-gap: 30px;
 	overflow: visible;
 }
 
