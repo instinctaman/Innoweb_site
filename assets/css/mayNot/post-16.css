@@ -22,7 +22,8 @@
 
 .elementor-16 .elementor-element.elementor-element-87bb18f:not(.elementor-motion-effects-element-type-background),
 .elementor-16 .elementor-element.elementor-element-87bb18f>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-image: url("https://demo.awaikenthemes.com/artistics/wp-content/uploads/2024/11/page-header-bg.jpg");
+background-image: linear-gradient(rgba(0, 0, 0, 1.5), rgba(0, 0, 0, 0.7)), url(/assets/images/banners/about_banner.jpg);
+
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
