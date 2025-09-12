@@ -17140,8 +17140,8 @@ body.admin-bar .ekit-wid-con .ekit-mini-cart-visibility-off_canvas>.ekit-mini-ca
 
 .ekit-content-ticker-wrapper .ekit-content-items .ticker.ticker-left:hover .marquee-wrapper,
 .ekit-content-ticker-wrapper .ekit-content-items .ticker.ticker-right:hover .marquee-wrapper {
-    -webkit-animation-play-state: var(--animation-play-state);
-    animation-play-state: var(--animation-play-state)
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
 }
 
 @media only screen and (max-width:425px) {

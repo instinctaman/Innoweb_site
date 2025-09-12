@@ -185,8 +185,8 @@ background-image: linear-gradient(rgba(0, 0, 0, 1.5), rgba(0, 0, 0, 0.7)), url(/
     --row-gap: 0px;
     --column-gap: 0px;
     --flex-wrap: wrap;
-    --padding-top: 160px;
-    --padding-bottom: 80px;
+    --padding-top: 60px;
+    --padding-bottom: 60px;
     --padding-left: 10px;
     --padding-right: 10px;
     overflow: visible;

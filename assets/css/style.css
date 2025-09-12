@@ -2092,7 +2092,7 @@ div:not(.elementor-image-gallery) .gallery.gallery-columns-3 .gallery-item{
 }
 
 .elementor-image-gallery .gallery.gallery-columns-3 figure.gallery-item{
-	width: 33.33%;
+	width: 20%;
 }
 
 div:not(.elementor-image-gallery) .gallery.gallery-columns-3 .gallery-item:nth-of-type(3n + 3){

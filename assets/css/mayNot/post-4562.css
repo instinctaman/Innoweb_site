@@ -180,8 +180,8 @@
     --container-widget-flex-grow: 0;
     --container-widget-align-self: initial;
     --flex-wrap-mobile: wrap;
-    --padding-top: 160px;
-    --padding-bottom: 80px;
+    --padding-top: 60px;
+    --padding-bottom: 60px;
     --padding-left: 20px;
     --padding-right: 20px;
     overflow: visible;
