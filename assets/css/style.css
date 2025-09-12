@@ -39,6 +39,7 @@ p{
 }
 
 .elementor-widget-text-editor p:last-child{
+	text-align: justify;
 	margin-bottom: 0 !important;
 }
 
@@ -4881,6 +4882,7 @@ h1.elementor-heading-title span{
 }
 
 .service-feature-image img {
+	border-radius: 15px;
     aspect-ratio: 1 / 0.67;
     object-fit: cover;
 }
