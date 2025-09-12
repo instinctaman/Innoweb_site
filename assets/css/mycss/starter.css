@@ -467,6 +467,8 @@
     }
 
     .elementor-5067 .elementor-element.elementor-element-50130de .elementskit-navbar-nav>li>a {
+        margin: 10px 0;
+        box-shadow: 0 4px 4px rgb(140 218 255);
         color: #000000;
         padding: 8px 20px 8px 20px;
     }
