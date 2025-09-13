@@ -2860,7 +2860,11 @@ h1.entry-title {
         font-size: var(--e-global-typography-accent-font-size);
         line-height: var(--e-global-typography-accent-line-height);
     }
-
+    @media screen and (max-width:400px) {
+    .phone_s {
+        font-size: 15px !important;
+    }
+}
     .elementor-section.elementor-section-boxed>.elementor-container {
         max-width: 767px;
     }
