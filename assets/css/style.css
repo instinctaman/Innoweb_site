@@ -4153,7 +4153,7 @@ h1.elementor-heading-title span{
 }
 
 .agency-supports-slider .elementor-image-carousel-wrapper::before{
-	content: '';
+	/* content: ''; */
 	display: block;
 	position: absolute;
 	top: 0;
@@ -4166,7 +4166,7 @@ h1.elementor-heading-title span{
 }
 
 .agency-supports-slider .elementor-image-carousel-wrapper::after {
-	content: '';
+	/* content: ''; */
 	display: block;
 	position: absolute;
 	top: 0;
@@ -4188,8 +4188,9 @@ h1.elementor-heading-title span{
     position: absolute;
     left: -70px;
     top: 50%;
-	background: url("assets/images/testimonial-bg-shape.png") no-repeat;
+	/* background: url("/assets/images/About.jpg") no-repeat; */
     background-position: left center;
+	border: none;
     background-size: contain;
     opacity: 70%;
     width: 306px;

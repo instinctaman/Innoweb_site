@@ -582,73 +582,231 @@
 								data-settings="{&quot;slides_to_show&quot;:&quot;6&quot;,&quot;slides_to_scroll&quot;:&quot;1&quot;,&quot;navigation&quot;:&quot;none&quot;,&quot;image_spacing_custom&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:30,&quot;sizes&quot;:[]},&quot;slides_to_show_tablet&quot;:&quot;4&quot;,&quot;slides_to_show_mobile&quot;:&quot;2&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;speed&quot;:500,&quot;image_spacing_custom_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;image_spacing_custom_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;ekit_we_effect_on&quot;:&quot;none&quot;}"
 								data-widget_type="image-carousel.default">
 								<div class="elementor-widget-container">
-									<div class="elementor-image-carousel-wrapper swiper" role="region"
-										aria-roledescription="carousel" aria-label="Image Carousel" dir="ltr">
-										<div class="elementor-image-carousel swiper-wrapper" aria-live="off"
-											style="left: 100px;">
-											<div class="swiper-slide" role="group" aria-roledescription="slide"
-												aria-label="1 of 9">
-												<figure class="swiper-slide-inner"><img decoding="async"
-														class="swiper-slide-image"
-														src="assets/images/clientss/radha_govind-removebg-preview.png"
-														alt="agency-supports-logo-1" /></figure>
-											</div>
-											<div class="swiper-slide" role="group" aria-roledescription="slide"
-												aria-label="2 of 9">
-												<figure class="swiper-slide-inner"><img decoding="async"
-														class="swiper-slide-image"
-														src="assets/images/clientss/vs_code-removebg-preview.png"
-														alt="agency-supports-logo-2" /></figure>
-											</div>
-											<div class="swiper-slide" role="group" aria-roledescription="slide"
-												aria-label="3 of 9">
-												<figure class="swiper-slide-inner"><img decoding="async"
-														class="swiper-slide-image" src="assets/images/clientss/roys.png"
-														alt="agency-supports-logo-3" /></figure>
-											</div>
-											<div class="swiper-slide" role="group" aria-roledescription="slide"
-												aria-label="4 of 9">
-												<figure class="swiper-slide-inner"><img decoding="async"
-														class="swiper-slide-image"
-														src="assets/images/clientss/royal_par.png"
-														alt="agency-supports-logo-4" /></figure>
-											</div>
-											<div class="swiper-slide" role="group" aria-roledescription="slide"
-												aria-label="5 of 9">
-												<figure class="swiper-slide-inner"><img decoding="async"
-														class="swiper-slide-image" src="assets/images/clientss/rph.png"
-														alt="agency-supports-logo-5" /></figure>
-											</div>
-											<div class="swiper-slide" role="group" aria-roledescription="slide"
-												aria-label="6 of 9">
-												<figure class="swiper-slide-inner"><img decoding="async"
-														class="swiper-slide-image"
-														src="assets/images/clientss/hire4.png"
-														alt="agency-supports-logo-6" /></figure>
-											</div>
-											<div class="swiper-slide" role="group" aria-roledescription="slide"
-												aria-label="7 of 9">
-												<figure class="swiper-slide-inner"><img decoding="async"
-														class="swiper-slide-image"
-														src="assets/images/clientss/shivansh.png"
-														alt="agency-supports-logo-6" /></figure>
-											</div>
-											<div class="swiper-slide" role="group" aria-roledescription="slide"
-												aria-label="8 of 9">
-												<figure class="swiper-slide-inner"><img decoding="async"
-														class="swiper-slide-image"
-														src="assets/images/clientss/jai_ambey.png"
-														alt="agency-supports-logo-6" /></figure>
-											</div>
-											<div class="swiper-slide" role="group" aria-roledescription="slide"
-												aria-label="9 of 9">
-												<figure class="swiper-slide-inner"><img decoding="async"
-														class="swiper-slide-image" src="assets/images/clientss/ibi.png"
-														alt="agency-supports-logo-6" /></figure>
+									<style>
+										.marquee {
+											width: 100%;
+											overflow: hidden;
+											/* background-color: #fff; */
+											display: flex;
+											align-items: center;
+											position: relative;
+										}
+
+										.marquee-content {
+											background-image: url('images/straight-road-travel-concept-illustration-png.webp');
+											display: flex;
+											animation: marquee 20s linear infinite;
+											/* Infinite animation */
+											animation-play-state: running;
+											/* Default running state */
+										}
+
+										.marquee:hover .marquee-content {
+											animation-play-state: paused;
+											/* Pause the animation on hover */
+										}
+
+										.marquee-item {
+											flex-shrink: 0;
+											width: 280px;
+											height: 140px;
+											display: flex;
+											justify-content: center;
+											align-items: center;
+											margin: 0 15px;
+											font-size: 20px;
+											transition: transform 0.4s ease, filter 0.4s ease;
+										}
+
+										.marquee:hover .marquee-item {
+											filter: blur(4px);
+											transform: scale(0.9);
+										}
+
+										.marquee .marquee-item:hover {
+											filter: none;
+											transform: scale(1.2);
+										}
+
+										@media screen and (max-width:767px) {
+											.marquee-item {
+												width: 100px;
+												height: 65px;
+												margin: 0;
+											}
+										}
+
+
+										@keyframes marquee {
+											0% {
+												transform: translateX(0);
+											}
+
+											100% {
+												transform: translateX(-50%);
+											}
+										}
+
+										.marq>div>img {
+											height: 100%;
+										}
+
+										.marquee-item>div>img {
+											box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+											padding: 5px 10px 5px 10px;
+											width: 100%;
+											border-radius: 20px;
+										}
+
+										.div_mar {
+											padding: 10px;
+											border-radius: 10px;
+										}
+
+
+										h3 {
+											position: relative;
+											padding: 0;
+											margin: 0;
+											font-weight: 400;
+											font-size: 35px;
+											color: #080808;
+											-webkit-transition: all 0.4s ease 0s;
+											-o-transition: all 0.4s ease 0s;
+											transition: all 0.4s ease 0s;
+										}
+
+										h3 em {
+											font-style: normal;
+											font-weight: 300;
+										}
+
+										@media screen and (max-width:767px) {
+											.marquee-item {
+												width: 150px;
+												height: 100px;
+												margin: 0;
+											}
+										}
+
+										.one h3 {
+											text-align: center;
+											text-transform: uppercase;
+											padding-bottom: 5px;
+										}
+
+										.one {
+											margin-top: 20px;
+										}
+									</style>
+									<section class="section-padding_h1 popular-course">
+										<div class="container">
+											<div class="marquee">
+												<div class="marquee-content">
+													<div class="marquee-item">
+														<div class="div_mar">
+															<img src="assets/images/client1/hire.jpg" alt="">
+														</div>
+													</div>
+													<div class="marquee-item">
+														<div class="div_mar">
+															<img src="assets/images/client1/ibi.jpg" alt="">
+														</div>
+													</div>
+													<div class="marquee-item">
+														<div class="div_mar">
+															<img src="assets/images/client1/jai_ambey.jpg" alt="">
+														</div>
+													</div>
+													<div class="marquee-item">
+														<div class="div_mar">
+															<img src="assets/images/client1/pllatos.jpg" alt="">
+														</div>
+													</div>
+													<div class="marquee-item">
+														<div class="div_mar">
+															<img src="assets/images/client1/radha_govind.jpg" alt="">
+														</div>
+													</div>
+													<div class="marquee-item">
+														<div class="div_mar">
+															<img src="assets/images/client1/roy.jpg" alt="">
+														</div>
+													</div>
+													<div class="marquee-item">
+														<div class="div_mar">
+															<img src="assets/images/client1/royal.jpg" alt="">
+														</div>
+													</div>
+													<div class="marquee-item">
+														<div class="div_mar">
+															<img src="assets/images/client1/rph.jpg" alt="">
+														</div>
+													</div>
+													<div class="marquee-item">
+														<div class="div_mar">
+															<img src="assets/images/client1/shivansh.jpg" alt="">
+														</div>
+													</div>
+													<div class="marquee-item">
+														<div class="div_mar">
+															<img src="assets/images/client1/vs.jpg" alt="">
+														</div>
+													</div>
+													<div class="marquee-item">
+														<div class="div_mar">
+															<img src="assets/images/client1/hire.jpg" alt="">
+														</div>
+													</div>
+													<div class="marquee-item">
+														<div class="div_mar">
+															<img src="assets/images/client1/ibi.jpg" alt="">
+														</div>
+													</div>
+													<div class="marquee-item">
+														<div class="div_mar">
+															<img src="assets/images/client1/jai_ambey.jpg" alt="">
+														</div>
+													</div>
+													<div class="marquee-item">
+														<div class="div_mar">
+															<img src="assets/images/client1/pllatos.jpg" alt="">
+														</div>
+													</div>
+													<div class="marquee-item">
+														<div class="div_mar">
+															<img src="assets/images/client1/radha_govind.jpg" alt="">
+														</div>
+													</div>
+													<div class="marquee-item">
+														<div class="div_mar">
+															<img src="assets/images/client1/roy.jpg" alt="">
+														</div>
+													</div>
+													<div class="marquee-item">
+														<div class="div_mar">
+															<img src="assets/images/client1/royal.jpg" alt="">
+														</div>
+													</div>
+													<div class="marquee-item">
+														<div class="div_mar">
+															<img src="assets/images/client1/rph.jpg" alt="">
+														</div>
+													</div>
+													<div class="marquee-item">
+														<div class="div_mar">
+															<img src="assets/images/client1/shivansh.jpg" alt="">
+														</div>
+													</div>
+													<div class="marquee-item">
+														<div class="div_mar">
+															<img src="assets/images/client1/vs.jpg" alt="">
+														</div>
+													</div>
+												</div>
 											</div>
 										</div>
-
-									</div>
+									</section>
 								</div>
 							</div>
 						</div>
@@ -1441,7 +1599,8 @@
 							data-widget_type="image.default">
 							<div class="elementor-widget-container">
 								<img fetchpriority="high" decoding="async" width="1200" height="800"
-									src="assets/images/review/client_review_wide.jpg" class="attachment-full size-full wp-image-335" alt=""
+									src="assets/images/review/client_review_wide.jpg"
+									class="attachment-full size-full wp-image-335" alt=""
 									style="clip-path: inset(0px 0% 0px 0px); margin-top: 20px;">
 							</div>
 						</div>
@@ -2071,13 +2230,14 @@
 	<script src="assets/js/use/frontend-modules.min.js"></script>
 	<script src="assets/js/use/core.min.js"></script>
 	<script id="elementor-frontend-js-before">
-		var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close", "a11yCarouselPrevSlideMessage": "Previous slide", "a11yCarouselNextSlideMessage": "Next slide", "a11yCarouselFirstSlideMessage": "This is the first slide", "a11yCarouselLastSlideMessage": "This is the last slide", "a11yCarouselPaginationBulletMessage": "Go to slide" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile Portrait", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Landscape", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet Portrait", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Landscape", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } }, "hasCustomBreakpoints": false }, "version": "3.30.2", "is_static": false, "experimentalFeatures": { "container": true, "nested-elements": true, "home_screen": true, "global_classes_should_enforce_capabilities": true, "cloud-library": true, "e_opt_in_v4_page": true }, "urls": { "assets": "https:\/\/demo.awaikenthemes.com\/artistics\/wp-content\/plugins\/elementor\/assets\/", "ajaxurl": "https:\/\/demo.awaikenthemes.com\/artistics\/wp-admin\/admin-ajax.php", "uploadUrl": "https:\/\/demo.awaikenthemes.com\/artistics\/wp-content\/uploads" }, "nonces": { "floatingButtonsClickTracking": "60c6014d47" }, "swiperClass": "swiper", "settings": { "page": [], "editorPreferences": [] }, "kit": { "body_background_background": "classic", "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 10764, "title": "Home%20%E2%80%93%20Slider%20%E2%80%93%20Artistics", "excerpt": "", "featuredImage": false } };
+		var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close", "a11yCarouselPrevSlideMessage": "Previous slide", "a11yCarouselNextSlideMessage": "Next slide", "a11yCarouselFirstSlideMessage": "This is the first slide", "a11yCarouselLastSlideMessage": "This is the last slide", "a11yCarouselPaginationBulletMessage": "Go to slide" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile Portrait", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Landscape", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet Portrait", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Landscape", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } }, "hasCustomBreakpoints": false }, "version": "3.30.2", "is_static": false, "experimentalFeatures": { "container": true, "nested-elements": true, "home_screen": true, "global_classes_should_enforce_capabilities": true, "cloud-library": true, "e_opt_in_v4_page": true }, "urls": { "assets": "https:\/\/demo.awaikenthemes.com\/artistics\/wp-content\/plugins\/elementor\/assets\/", "uploadUrl": "https:\/\/demo.awaikenthemes.com\/artistics\/wp-content\/uploads" }, "nonces": { "floatingButtonsClickTracking": "60c6014d47" }, "swiperClass": "swiper", "settings": { "page": [], "editorPreferences": [] }, "kit": { "body_background_background": "classic", "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 10764, "title": "Innoweb Solution", "excerpt": "", "featuredImage": false } };
 	</script>
 	<script src="assets/js/use/frontend.min.js"></script>
 	<script src="assets/js/use/mediaelement-and-player.min.js"></script>
 	<script src="assets/js/use/swiper.min.js"></script>
 	<script src="assets/js/use/jquery-numerator.min.js"></script>
 	<script src="assets/js/use/elementor.js"></script>
+	<script src="assets/js/dist/elementor.js"></script>
 	<script src="header.js"></script>
 </body>
 
