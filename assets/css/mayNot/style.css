@@ -3498,7 +3498,7 @@ body.admin-bar .main-header.ekit-sticky--effects{
     border-radius: 10px !important;
     color: var(--e-global-color-black) !important;
     border: none;
-    padding: 14px 30px !important;
+    padding: 14px 14px !important;
 } 
 
 .footer-newsletter-form button:hover{
@@ -5563,4 +5563,17 @@ h1.elementor-heading-title span{
 
 .video-gallery img{
 	aspect-ratio: 1 / 0.8;
+}
+.logo_main{
+    background-color: white;
+    border-radius: 5px !important;
+}
+
+.agent {
+    color: #0693e3;;
+}
+
+.footer_p {
+    margin: 0 !important;
+    text-align: justify;
 }

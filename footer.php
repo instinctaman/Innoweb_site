@@ -11,18 +11,21 @@
 								data-widget_type="image.default">
 								<div class="elementor-widget-container">
 									<img width="166" height="51" src="assets/images/Inno_logo.png"
-										class="attachment-full size-full wp-image-5983"
-										style="background-color: white; border-radius: 5px;" alt="" />
+										class="attachment-full size-full wp-image-5983 logo_main" alt="Logo" />
 								</div>
 							</div>
-							<p style="margin: 0; text-align: justify;">Innoweb Solution is one of the leading web solutions company based in Delhi. Since the time of its inception, we have been striving to proffer result oriented, effective, quality and cost effective services to clients spread across the different industry verticals.</p>
+							<p style="margin: 0;">Innoweb Solution is one of the leading web
+								solutions company based in Delhi. Since the time of its inception, we have been striving
+								to proffer result oriented, effective, quality and cost effective services to clients
+								spread across the different industry verticals.</p>
 							<div class="elementor-element elementor-element-a111120 footer-contact-item ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box"
 								data-id="a111120" data-element_type="widget"
 								data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}"
 								data-widget_type="elementskit-icon-box.default">
 								<div class="elementor-widget-container">
 									<div class="ekit-wid-con"> <!-- link opening -->
-										<a href="tel:(309)%208855-314" class="ekit_global_links">
+										<a href="tel:(309)%208855-314" class="ekit_global_links"
+											title="Call (309) 8855-314">
 											<!-- end link opening -->
 
 											<div
@@ -49,8 +52,6 @@
 															+91-9911089108 </h4>
 													</div>
 												</a>
-
-
 											</div>
 										</a>
 									</div>
@@ -62,7 +63,8 @@
 								data-widget_type="elementskit-icon-box.default">
 								<div class="elementor-widget-container">
 									<div class="ekit-wid-con"> <!-- link opening -->
-										<a href="mailto:info@innowebsolution.com" class="ekit_global_links">
+										<a href="mailto:info@innowebsolution.com" class="ekit_global_links"
+											title="Email info@innowebsolution.com">
 											<!-- end link opening -->
 
 											<div
@@ -159,15 +161,13 @@
 													<li id="menu-item-11018"
 														class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11018 nav-item elementskit-mobile-builder-content"
 														data-vertical-menu=750px><a href="#"
-															class="ekit-menu-nav-link">Terms &#038; Conditions</a></li>
+															class="ekit-menu-nav-link">Terms &#038;
+															Conditions</a></li>
 													<li id="menu-item-11019"
 														class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11019 nav-item elementskit-mobile-builder-content"
 														data-vertical-menu=750px><a href="#"
-															class="ekit-menu-nav-link">Privacy Policy</a></li>
-													<!-- <li id="menu-item-11020"
-														class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11020 nav-item elementskit-mobile-builder-content"
-														data-vertical-menu=750px><a href="#"
-															class="ekit-menu-nav-link">Help</a></li> -->
+															class="ekit-menu-nav-link">Privacy
+															Policy</a></li>
 												</ul>
 											</div>
 										</div>
@@ -222,7 +222,8 @@
 																			type="email" name="email" /></span>
 																</p>
 															</div>
-															<p><button type="submit">Send Message</button>
+															<p><button type="submit" class="phone_s">Send
+																	Message</button>
 															</p>
 														</div>
 													</div>
@@ -242,28 +243,35 @@
 										<ul class="ekit_social_media">
 											<li class="elementor-repeater-item-c477a9e">
 												<a href="https://www.linkedin.com/company/innoweb-solution/"
-													aria-label="Pinterest" class="p">
-
+													aria-label="LinkedIn" title="LinkedIn" class="p">
 													<i aria-hidden="true" class="fab fa-linkedin"></i>
 												</a>
 											</li>
 											<li class="elementor-repeater-item-48b645a">
-												<a href="https://x.com/innowebsoluton" class="twitter">
+												<a href="https://x.com/innowebsoluton" aria-label="X (Twitter)"
+													title="X (Twitter)" class="twitter">
 													<i aria-hidden="true" class="fab fa-x-twitter"></i>
 												</a>
 											</li>
 											<li class="elementor-repeater-item-c7d4689">
 												<a href="https://www.facebook.com/Innowebsolution/"
-													aria-label="Facebook" class="f">
+													aria-label="Facebook" title="Facebook" class="f">
 
 													<i aria-hidden="true" class="fab fa-facebook-f"></i>
 												</a>
 											</li>
 											<li class="elementor-repeater-item-4fcfb8e">
 												<a href="https://www.instagram.com/innowebsolution.ltd/#"
-													aria-label="Instagram" class="instagram">
+													aria-label="Instagram" title="Instagram" class="instagram">
 
 													<i aria-hidden="true" class="fab fa-instagram"></i>
+												</a>
+											</li>
+											<li class="elementor-repeater-item-4fcfb8e">
+												<a href="https://www.youtube.com/@InnowebSolution" aria-label="YouTube"
+													title="YouTube" class="youtube">
+
+													<i aria-hidden="true" class="fab fa-youtube"></i>
 												</a>
 											</li>
 										</ul>
@@ -279,11 +287,11 @@
 							data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}"
 							data-widget_type="text-editor.default">
 							<div class="elementor-widget-container">
-								<p>Copyright © 2024, developed by <a href="index.html"><span
-											style="color:#0693e3;">Innoweb</span></a>. &nbsp;All Rights Reserved.</p>
+								<p>Copyright © 2024, developed by <a href="index.html"><span class="agent">Innoweb
+											Solution</span></a>. &nbsp;All Rights
+									Reserved.</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-            

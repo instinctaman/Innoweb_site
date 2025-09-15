@@ -1,0 +1,13 @@
+.logo_main{
+    background-color: white;
+    border-radius: 5px !important;
+}
+
+.agent {
+    color: #0693e3;;
+}
+
+.footer_p {
+    margin: 0 !important;
+    text-align: justify;
+}
