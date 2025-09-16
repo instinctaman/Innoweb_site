@@ -513,7 +513,8 @@
 																	<div class="box-footer disable_hover_button">
 																		<div class="btn-wraper">
 																			<a class="elementskit-btn whitespace--normal"
-																				href="javascrip:;">
+																				data-bs-toggle="modal"
+																				data-bs-target="#exampleModal">
 																				<svg xmlns="http://www.w3.org/2000/svg"
 																					width="31" height="31"
 																					viewBox="0 0 31 31" fill="none">
@@ -896,6 +897,464 @@
 
 		</div>
 	</div>
+	<style>
+		.form-popup-bg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+			justify-content: center;
+		}
+
+		.form-popup-bg {
+			position: fixed;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			background-color: rgba(94, 110, 141, 0.9);
+			opacity: 0;
+			visibility: hidden;
+			-webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+			-moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+			transition: opacity 0.3s 0s, visibility 0s 0.3s;
+			overflow-y: auto;
+			z-index: 10000;
+		}
+
+		.form-popup-bg.is-visible {
+			opacity: 1;
+			visibility: visible;
+			-webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+			-moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+			transition: opacity 0.3s 0s, visibility 0s 0s;
+		}
+
+		.form-container {
+			top: 60px;
+			border-radius: 10px;
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			max-width: 700px;
+			margin-left: auto;
+			margin-right: auto;
+			position: relative;
+			padding: 40px;
+			color: #fff;
+		}
+
+		.close-button {
+			background: none;
+			color: #fff;
+			width: 40px;
+			height: 40px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			border: solid 1px #fff;
+		}
+
+		.form-popup-bg:before {
+			content: '';
+			background-color: #fff;
+			opacity: 0.25;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+
+		.reg-input {
+			font-size: 12px !important;
+			border: 1px solid #d3d4d3 !important;
+		}
+	</style>
+	<style>
+		.karcenter {
+			margin: 15px;
+			display: flex;
+			justify-content: center;
+			z-index: 8;
+		}
+        
+        .modal-content{
+			background-color: transparent;
+		}
+
+		.reg-box {
+			width: 100%;
+			max-width: 350px;
+			/* background: #fff; */
+			/* color: #890C25; */
+			border-radius: 8px;
+			padding: 12px;
+			box-shadow: 0 2px 12px rgba(88, 81, 81, 0.07);
+			box-sizing: border-box;
+		}
+
+		.reg-title {
+			text-align: center;
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 1.4;
+			margin-bottom: 12px;
+		}
+
+		.reg-form {
+			width: 330px;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+		}
+
+		.reg-input,
+		.reg-select {
+			background-color: transparent;
+			width: 100%;
+			border: 1px solid #d3d4d3;
+			border-radius: 4px;
+			padding: 6px 12px;
+			font-size: 12px;
+			color: #fff;
+			/* background: #fff; */
+			box-sizing: border-box;
+		}
+
+		.reg-label {
+			font-size: 13px;
+			font-weight: 500;
+			margin-bottom: 4px;
+		}
+
+		.reg-phone-wrapper {
+			display: flex;
+			align-items: center;
+			border: 1px solid #d3d4d3;
+			border-radius: 4px;
+			/* background: #fff; */
+		}
+
+		.reg-phone-prefix {
+			margin-right: 6px;
+			color: #333;
+			font-size: 12px;
+			-webkit-user-select: none;
+			user-select: none;
+		}
+
+		.reg-checkbox-row {
+			display: flex;
+			align-items: flex-start;
+			gap: 7px;
+			margin: 7px 0;
+		}
+
+		.captcha-box {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+
+		.captcha {
+			font-size: 16px;
+			font-weight: bold;
+			/* background-color: #f2f2f2; */
+			padding: 5px 10px;
+			letter-spacing: 5px;
+			border: 1px dashed #999;
+			-webkit-user-select: none;
+			user-select: none;
+		}
+
+		.error-message {
+			font-size: 12px;
+			color: red;
+			margin-top: 5px;
+			display: none;
+		}
+
+		.reg-checkbox {
+			accent-color: #890C25;
+			margin-top: 1px;
+		}
+
+		.consent-checkbox {
+			font-size: 12px;
+			margin-bottom: 5px;
+		}
+
+		.reg-checkbox-label {
+			font-size: 12px;
+			line-height: 14px;
+			color: #890C25;
+			-webkit-user-select: none;
+			user-select: none;
+		}
+
+		.reg-button {
+			margin-top: -12px;
+			background: #890C25;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			padding: 11px 0;
+			font-size: 12px;
+			font-weight: 600;
+			cursor: pointer;
+			width: 100%;
+			transition: opacity 0.18s;
+		}
+
+		.reg-button:hover,
+		.reg-button:active {
+			opacity: 0.82;
+		}
+
+		.reg-footer-row {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 18px;
+			font-size: 13px;
+			color: #222;
+		}
+
+		.reg-login-link {
+			color: #890C25;
+			text-decoration: underline;
+			cursor: pointer;
+			-webkit-user-select: none;
+			user-select: none;
+		}
+
+		@media (max-width: 550px) {
+			.reg-box {
+				padding: 12px;
+			}
+		}
+
+		@media (max-width:1189) and (min-width:250px) {
+			.karcenter {
+				max-width: 300px;
+			}
+
+			.forming {
+				display: flex;
+				justify-content: center;
+			}
+		}
+
+		@media (max-width: 407px) {
+			.on2 {
+				padding: 0px 30px 2px 35px;
+			}
+		}
+	</style>
+	<!-- Modal Form Start-->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body elementor-kit-8">
+					<div class="karcenter">
+						<section class="forming">
+							<div class="elementor-element elementor-element-5eb8811 elementor-widget elementor-widget-elementskit-social-media"
+								data-id="5eb8811" data-element_type="widget"
+								data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}"
+								data-widget_type="elementskit-social-media.default" style="background-color: var(--e-global-color-divider); padding: 15px; border-radius: 10px;">
+								<div class="elementor-widget-container">
+									<div class="ekit-wid-con" style="text-align: center;">
+										Follow us on
+										<ul class="ekit_social_media" style="display: flex; justify-self: center;">
+											<li class="elementor-repeater-item-c477a9e">
+												<a href="https://www.linkedin.com/company/innoweb-solution/"
+													aria-label="LinkedIn" title="LinkedIn" class="p">
+													<i aria-hidden="true" class="fab fa-linkedin"></i>
+												</a>
+											</li>
+											<li class="elementor-repeater-item-48b645a">
+												<a href="https://x.com/innowebsoluton" aria-label="X (Twitter)"
+													title="X (Twitter)" class="twitter">
+													<i aria-hidden="true" class="fab fa-x-twitter"></i>
+												</a>
+											</li>
+											<li class="elementor-repeater-item-c7d4689">
+												<a href="https://www.facebook.com/Innowebsolution/"
+													aria-label="Facebook" title="Facebook" class="f">
+
+													<i aria-hidden="true" class="fab fa-facebook-f"></i>
+												</a>
+											</li>
+											<li class="elementor-repeater-item-4fcfb8e">
+												<a href="https://www.instagram.com/innowebsolution.ltd/#"
+													aria-label="Instagram" title="Instagram" class="instagram">
+
+													<i aria-hidden="true" class="fab fa-instagram"></i>
+												</a>
+											</li>
+											<li class="elementor-repeater-item-4fcfb8e">
+												<a href="https://www.youtube.com/@InnowebSolution" aria-label="YouTube"
+													title="YouTube" class="youtube">
+
+													<i aria-hidden="true" class="fab fa-youtube"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="reg-box">
+								<div class="reg-title">Get a call back</div>
+								<form class="reg-form" onsubmit="return handleSubmit(event)">
+									<input type="text" class="reg-input" placeholder="Your Name*" required />
+
+									<input type="email" class="reg-input" placeholder="Enter Email*" required />
+									<input type="tel" class="reg-input" id="mobile" name="mobile" pattern="[0-9]{10}"
+										maxlength="10" required placeholder="Phone Number*"
+										style="border:none;outline:none;padding-left:15px;background:transparent;"
+										oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+										<textarea name="Message" placeholder="Message" class="reg-input" id=""></textarea>
+									<button type="submit" style="margin-top: 12px;" class="reg-button"
+										onclick="validateCaptcha()">Submit</button>
+								</form>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Modal Form End-->
+	<script>
+		// Utility: fetch states and cities
+		async function fetchStates(select) {
+			const response = await fetch("https://countriesnow.space/api/v0.1/countries/states", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json"
+				},
+				body: JSON.stringify({
+					country: "India"
+				})
+			});
+			const data = await response.json();
+			select.innerHTML = '<option value="">Select State</option>';
+			data.data.states.forEach(state => {
+				const option = document.createElement("option");
+				option.value = state.name;
+				option.text = state.name;
+				select.appendChild(option);
+			});
+		}
+
+		async function fetchCities(stateSelect, citySelect) {
+			const selectedState = stateSelect.value;
+			if (!selectedState) {
+				citySelect.innerHTML = '<option value="">Select a state first</option>';
+				return;
+			}
+			const response = await fetch("https://countriesnow.space/api/v0.1/countries/state/cities", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json"
+				},
+				body: JSON.stringify({
+					country: "India",
+					state: selectedState
+				})
+			});
+			const data = await response.json();
+			citySelect.innerHTML = '<option value="">Select City</option>';
+			data.data.forEach(city => {
+				const option = document.createElement("option");
+				option.value = city;
+				option.text = city;
+				citySelect.appendChild(option);
+			});
+		}
+
+		// Store CAPTCHA per form
+		const captchaMap = new WeakMap();
+
+		// For each registration form on the page
+		document.querySelectorAll('form.reg-form').forEach(form => {
+			const stateSelect = form.querySelector('select.reg-select[aria-label*="State"]');
+			const citySelect = form.querySelector('select.reg-select[aria-label*="City"]');
+			const captchaDiv = form.querySelector('.captcha');
+			const captchaInput = form.querySelector('#captchaInput');
+			const captchaError = form.querySelector('#captchaError');
+			const refreshBtn = form.querySelector('.captcha-box span');
+
+			// State/City logic
+			if (stateSelect && citySelect) {
+				fetchStates(stateSelect);
+				stateSelect.addEventListener('change', () => fetchCities(stateSelect, citySelect));
+			}
+
+			// CAPTCHA logic
+			function generateCaptcha() {
+				const chars = "ABCDEFGHJKLMNPQRSTUVWXYZabcdefghjkmnpqrstuvwxyz23456789";
+				let captcha = "";
+				for (let i = 0; i < 6; i++) {
+					captcha += chars.charAt(Math.floor(Math.random() * chars.length));
+				}
+				captchaMap.set(form, captcha);
+				if (captchaDiv) captchaDiv.innerText = captcha;
+				if (captchaInput) captchaInput.value = "";
+				clearCaptchaError();
+			}
+
+			function validateCaptcha() {
+				if (!captchaInput) return true;
+				const input = captchaInput.value.trim();
+				if (input === captchaMap.get(form)) {
+					return true;
+				} else {
+					captchaInput.classList.add("error");
+					if (captchaError) captchaError.style.display = "block";
+					return false;
+				}
+			}
+
+			function clearCaptchaError() {
+				if (captchaInput) captchaInput.classList.remove("error");
+				if (captchaError) captchaError.style.display = "none";
+			}
+			// Attach events
+			if (refreshBtn) refreshBtn.onclick = generateCaptcha;
+			if (captchaInput) captchaInput.oninput = clearCaptchaError;
+
+			// Generate CAPTCHA on load
+			generateCaptcha();
+
+			// Form submit
+			form.onsubmit = function (e) {
+				e.preventDefault();
+				if (!validateCaptcha()) return false;
+				// If you use Google reCAPTCHA, add your check here
+				// const response = grecaptcha.getResponse();
+				// if (response.length === 0) {
+				//     alert("Please verify you are human via the captcha.");
+				//     return false;
+				// }
+				alert("Form submitted successfully (Demo only)");
+				generateCaptcha();
+				return false;
+			};
+		});
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+		crossorigin="anonymous"></script>
 	<script>
 		const lazyloadRunObserver = () => {
 			const lazyloadBackgrounds = document.querySelectorAll(`.e-con.e-parent:not(.e-lazyloaded)`);

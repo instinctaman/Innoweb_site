@@ -3390,14 +3390,14 @@ body.admin-bar .main-header.ekit-sticky--effects{
 	}
 }
 
-/* Elementor Footer CSS */
+/* Elementor Footer CSS */ 
 
 .work-together-btn .elementor-button-wrapper{
     padding-right: 0 !important ;
 }
 
 .e-con.footer-work-together::before{
-    content: '';
+    /* content: ''; */
     display: block;
     position: absolute;
     left: -120px;

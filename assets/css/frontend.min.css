@@ -1044,6 +1044,14 @@ h1.entry-title {
     }
 }
 
+@media screen and (max-width:1025px) {
+    .dividers {
+        border-style: solid;
+        border-width: 1px 0px 0px 0px;
+        border-color: var(--e-global-color-divider);
+    }
+}
+
 @media (min-width:1025px) and (max-width:-1) {
 
     .elementor-reverse-laptop>.elementor-container>:first-child,
@@ -2039,7 +2047,7 @@ body.rtl .e-con {
 @media (max-width:767px) {
     .e-con.e-flex {
         --width: 100%;
-        --flex-wrap: var(--flex-wrap-mobile)
+        --flex-wrap: var(--flex-wrap-mobile);
     }
 
     .e-con.e-flex .elementor-widget-archive-posts {

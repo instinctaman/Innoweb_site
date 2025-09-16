@@ -1,19 +1,3 @@
-/*
-Theme Name: Artistics
-Theme URI: https://1.envato.market/artistic-wp
-Description: Digital Marketing Agency WordPress Theme
-Author: Awaiken
-Author URI: https://awaikenthemes.com/
-Version: 1.0.11
-Requires at least: 6.3
-Tested up to: 6.8
-Requires PHP: 7.4
-License: Themeforest Split Licence
-License URI: https://themeforest.net/licenses/standard
-Text Domain: artistics
-Tags: one-column, two-columns, three-columns, four-columns, custom-colors, custom-menu, custom-logo, editor-style, featured-images, threaded-comments, style-variations, blog
-*/
-
 html, body{
 	width: 100%;
 	overflow-x: clip;
@@ -3042,11 +3026,6 @@ aside.widget .wp-block-social-links{
 	text-align: center;
 }
 
-.artistic-archive-project .awaiken-portfolio-grid-item__wrapper {
-    height: calc(100% - 40px);
-    margin-bottom: 40px;
-}
-
 .awaiken-portfolio-grid .awaiken-portfolio-grid-item__wrapper .awaiken-portfolio-grid-item__image{
 	position: relative;
 	border-radius: 30px;
@@ -3218,11 +3197,6 @@ aside.widget .wp-block-social-links{
 
 	.awaiken-portfolio-grid__filters.portfolio_filter-design-2{
 		gap: 15px 30px;	
-	}
-
-	.artistic-archive-project .awaiken-portfolio-grid-item__wrapper{
-		height: calc(100% - 30px);
-		margin-bottom: 30px;
 	}
 
 	.awaiken-portfolio-grid .awaiken-portfolio-grid-item__image .awaiken-portfolio-grid-item__readmore a{
@@ -3397,7 +3371,7 @@ body.admin-bar .main-header.ekit-sticky--effects{
 }
 
 .e-con.footer-work-together::before{
-    content: '';
+    /* content: ''; */
     display: block;
     position: absolute;
     left: -120px;
@@ -3634,14 +3608,6 @@ body.admin-bar .main-header.ekit-sticky--effects{
 	mask-size: cover;
 	width: 16px;
 	height: 16px;
-}
-
-.artistic-hide-small-icon .section-title .elementor-heading-title::before{
-	display: none;
-}
-
-.artistic-hide-small-icon .section-title .elementor-heading-title{
-	padding-left: 0;
 }
 
 @media only screen and (max-width: 991px){
@@ -4059,13 +4025,14 @@ h1.elementor-heading-title span{
 }
 
 .our-features::before {
-	content: '';
+	/* content: ''; */
+	border: none;
 	display: block;
 	position: absolute;
 	right: -90px;
 	left: auto;
 	top: 50%;
-	background: url("assets/images/features-bg-shape.png") no-repeat left center;
+	background: url("/assets/icons/work-together-bg-shape.png") no-repeat left center;
 	background-size: contain;
 	opacity: 50%;
 	width: 300px;

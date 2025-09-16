@@ -1047,6 +1047,7 @@ body:not(.rtl) .elementor-10103 .elementor-element.elementor-element-398bcc1 .el
 }
 
 .elementor-10103 .elementor-element.elementor-element-11c4182 {
+    
     --display: flex;
     overflow: visible;
 }
@@ -1138,7 +1139,7 @@ body:not(.rtl) .elementor-10103 .elementor-element.elementor-element-398bcc1 .el
         --gap: 20px 20px;
         --row-gap: 20px;
         --column-gap: 20px;
-        --padding-top: 80px;
+        --padding-top: 40px;
         --padding-bottom: 40px;
         --padding-left: 10px;
         --padding-right: 10px;
