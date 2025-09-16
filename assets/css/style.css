@@ -3558,6 +3558,9 @@ body.admin-bar .main-header.ekit-sticky--effects{
 	width: calc(50% - 15px);
 }
 
+.stable {
+	width: auto !important;
+}
 .column-2 ul li .elementor-icon-list-icon+.elementor-icon-list-text{
     align-self: start;
 }
