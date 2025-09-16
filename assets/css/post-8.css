@@ -25,7 +25,7 @@
     --e-global-typography-accent-font-weight: 700;
     --e-global-typography-accent-line-height: 1.4em;
     background-color: #000000;
-    background-image: url("https://demo.awaikenthemes.com/artistics/wp-content/uploads/2024/11/section-bg-shape.png");
+    background-image: url("/assets/icons/section-bg-shape.png");
     color: var(--e-global-color-text);
     font-family: var(--e-global-typography-text-font-family), Sans-serif;
     font-size: var(--e-global-typography-text-font-size);

@@ -2711,7 +2711,7 @@ body.rtl .e-con {
     --e-global-typography-accent-font-weight: 700;
     --e-global-typography-accent-line-height: 1.4em;
     background-color: #000000;
-    background-image: url("https://demo.awaikenthemes.com/artistics/wp-content/uploads/2024/11/section-bg-shape.png");
+    background-image: url("/assets/icons/section-bg-shape.png");
     color: var(--e-global-color-text);
     font-family: var(--e-global-typography-text-font-family), Sans-serif;
     font-size: var(--e-global-typography-text-font-size);
@@ -2915,7 +2915,7 @@ h1.entry-title {
 
 .elementor-5407 .elementor-element.elementor-element-1e35c81:not(.elementor-motion-effects-element-type-background),
 .elementor-5407 .elementor-element.elementor-element-1e35c81>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-image: url("https://demo.awaikenthemes.com/artistics/wp-content/uploads/2024/11/work-together-bg.png");
+    background-image: url("/assets/icons/work-together-bg.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: auto;
@@ -2937,7 +2937,7 @@ h1.entry-title {
 
 .elementor-5407 .elementor-element.elementor-element-35bf1d1:not(.elementor-motion-effects-element-type-background),
 .elementor-5407 .elementor-element.elementor-element-35bf1d1>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-image: url("https://demo.awaikenthemes.com/artistics/wp-content/uploads/2024/11/work-together-bg-gradient.png");
+    background-image: url("/assets/icons/work-together-bg-gradient.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -3920,7 +3920,7 @@ body.rtl .elementor-5407 .elementor-element.elementor-element-13d268a {
     }
 
     .elementor-5407 .elementor-element.elementor-element-71e3969 {
-        --width: calc(50% - 10px);
+        --width: calc(42% - 10px);
         --gap: 15px 15px;
         --row-gap: 15px;
         --column-gap: 15px;
@@ -3937,7 +3937,7 @@ body.rtl .elementor-5407 .elementor-element.elementor-element-13d268a {
     }
 
     .elementor-5407 .elementor-element.elementor-element-60b9dea {
-        --width: calc(50% - 10px);
+        --width: calc(58% - 10px);
         --gap: 15px 15px;
         --row-gap: 15px;
         --column-gap: 15px;

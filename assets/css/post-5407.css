@@ -24,7 +24,7 @@
 
 .elementor-5407 .elementor-element.elementor-element-1e35c81:not(.elementor-motion-effects-element-type-background),
 .elementor-5407 .elementor-element.elementor-element-1e35c81>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-image: url("https://demo.awaikenthemes.com/artistics/wp-content/uploads/2024/11/work-together-bg.png");
+    background-image: url("/assets/icons/work-together-bg.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: auto;
@@ -37,7 +37,7 @@
 
 .elementor-5407 .elementor-element.elementor-element-35bf1d1:not(.elementor-motion-effects-element-type-background),
 .elementor-5407 .elementor-element.elementor-element-35bf1d1>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-image: url("https://demo.awaikenthemes.com/artistics/wp-content/uploads/2024/11/work-together-bg-gradient.png");
+    background-image: url("/assets/icons/work-together-bg-gradient.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;

@@ -22,7 +22,7 @@
 
 .elementor-10103 .elementor-element.elementor-element-9918e5e:not(.elementor-motion-effects-element-type-background),
 .elementor-10103 .elementor-element.elementor-element-9918e5e>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    /* background-image: url("https://demo.awaikenthemes.com/artistics/wp-content/uploads/2024/11/page-header-bg.jpg"); */
+    background-image: url("/assets/icons/page-header-bg.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,7 +30,7 @@
 .elementor-10103 .elementor-element.elementor-element-9918e5e:not(.elementor-motion-effects-element-type-background),
 .elementor-10103 .elementor-element.elementor-element-9918e5e>.elementor-motion-effects-container>.elementor-motion-effects-layer::before {
     content: "";
-    background-image: url("https://demo.awaikenthemes.com/artistics/wp-content/uploads/2024/11/page-header-bg.jpg");
+    background-image: url("/assets/icons/page-header-bg.jpg");
     background-position: center center;
     overlay: 2;
     background-repeat: no-repeat;
@@ -447,7 +447,7 @@ body:not(.rtl) .elementor-10103 .elementor-element.elementor-element-398bcc1 .el
 
 .elementor-10103 .elementor-element.elementor-element-c403016:not(.elementor-motion-effects-element-type-background),
 .elementor-10103 .elementor-element.elementor-element-c403016>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-image: url("https://demo.awaikenthemes.com/artistics/wp-content/uploads/2024/11/service-bg-1.svg");
+    background-image: url("/assets/icons/service-bg-1.svg");
     background-position: top left;
     background-repeat: no-repeat;
     background-size: auto;
@@ -684,7 +684,7 @@ body:not(.rtl) .elementor-10103 .elementor-element.elementor-element-398bcc1 .el
 
 .elementor-10103 .elementor-element.elementor-element-ee2d261:not(.elementor-motion-effects-element-type-background),
 .elementor-10103 .elementor-element.elementor-element-ee2d261>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-image: url("https://demo.awaikenthemes.com/artistics/wp-content/uploads/2024/11/service-bg-1.svg");
+    background-image: url("/assets/icons/service-bg-1.svg");
     background-position: top left;
     background-repeat: no-repeat;
     background-size: auto;
@@ -813,7 +813,7 @@ body:not(.rtl) .elementor-10103 .elementor-element.elementor-element-398bcc1 .el
 
 .elementor-10103 .elementor-element.elementor-element-abd7fbd:not(.elementor-motion-effects-element-type-background),
 .elementor-10103 .elementor-element.elementor-element-abd7fbd>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-image: url("https://demo.awaikenthemes.com/artistics/wp-content/uploads/2024/11/service-bg-1.svg");
+    background-image: url("/assets/icons/service-bg-1.svg");
     background-position: top left;
     background-repeat: no-repeat;
     background-size: auto;
